@@ -14,3 +14,8 @@ get '/' do
   @res = connect.exec('select * from samples;')
   erb :index
 end
+
+get '/hello' do
+  'hello'
+end
+ 
